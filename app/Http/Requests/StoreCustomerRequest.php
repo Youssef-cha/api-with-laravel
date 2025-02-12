@@ -32,7 +32,7 @@ class StoreCustomerRequest extends FormRequest
             'postalCode' => ['required'],
         ];
     }
-     function prepareForValidation()
+    public function prepareForValidation()
     {
         $this->merge([
             'postal_code' => $this->postalCode,
